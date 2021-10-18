@@ -1,0 +1,38 @@
+[
+    {
+        "id":1,"serviceName":"Eye examination","description":"Globally harness multimedia based collaboration and idea-sharing with backend products. Continually whiteboard superior opportunities.",
+        "img": "https://i.ibb.co/MnnxMw1/eye.png",
+        "cost":200
+    },
+
+    {
+        "id":2,"serviceName":"Diagnosis and treatment","description":"Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy proposition.",
+        "img": "https://i.ibb.co/vD5dkzx/Diagnosis-and-treatment.png",
+        "cost":250
+    },
+
+    {
+        "id":3,"serviceName":"Cardiology","description":"Our comprehensive heart services include general and preventive cardiology, cardiac testing and imaging, specialized cardiology and cardiac surgery.",
+        "img": "https://i.ibb.co/Wyjczq9/cardio.png",
+        "cost":500
+    },
+    
+    {
+        "id":4,"serviceName":"Neurosurgery","description":"Our top-rated neurosurgeons use advanced imaging and surgical techniques to treat neurological conditions, such as brain tumors and traumatic brain injury.",
+        "img": "https://i.ibb.co/NxZsYNM/Neurosurgery.png",
+        "cost":300
+    },
+    
+    {
+        "id":5,"serviceName":"Cancer Care","description":"Our patients can expect comprehensive and individualized cancer care, delivered in convenient locations across Southern California.",
+        "img": "https://i.ibb.co/6Prjkjy/cancer.png",
+        "cost":150
+    },
+    
+    {
+        "id":6,"serviceName":"Pediatrics","description":"At i-Care, we partner with families to deliver expert, compassionate care to infants, children and teens.",
+        "img": "https://i.ibb.co/VMpFRFj/Pediatricsjfif.png",
+        "cost":150
+
+    }
+]

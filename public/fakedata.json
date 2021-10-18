@@ -1,0 +1,22 @@
+[
+    {
+        "id":1,
+        "name":"Our Research",
+        "img":"https://i.ibb.co/JH0DX44/Card-our-flagship-services.jpg",
+        "descrip":"Join us as we continue the bounderies of medical and health research"
+    },
+    
+    {
+        "id":2,
+        "name":"Our flagship service",
+        "img":"https://i.ibb.co/VJmdc1y/Card-our-research.jpg",
+        "descrip":"We're the preferred provider patients and internationally recognised for these services."
+    },
+    
+    {
+        "id":4,
+        "name":"Our stories",
+        "img":"https://i.ibb.co/FqgmH53/Card-our-stories-hp.jpg",
+        "descrip":"Our students, staff and patients share their stories and experience at i-Care"
+    }
+]

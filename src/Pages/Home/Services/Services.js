@@ -5,7 +5,7 @@ import './Services.css'
 const Services = () => {
    const [services] = AvailableServices()
     return (
-        <div className="mt-5">
+        <div className="mt-5 service">
             <h1>Our Services</h1>
             <div className="underline"></div>
             <div className="services">

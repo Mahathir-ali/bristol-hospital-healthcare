@@ -1,0 +1,9 @@
+.form_body {
+  margin: auto;
+  padding: 50px;
+  /* width: 50%; */
+}
+.form_body .form {
+  box-shadow: 5px 8px 5px 8px #ccc;
+  padding: 50px;
+}

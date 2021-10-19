@@ -3,9 +3,10 @@ import './Service.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { Button, Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Service = ({service}) => {
-    const {serviceName, description, id, cost, img } = service;
+    const {serviceName, description, id, img } = service;
     const arrow = <FontAwesomeIcon icon={faChevronRight}/>
 
     return (
@@ -19,7 +20,10 @@ const Service = ({service}) => {
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-      <Button>Find out more {arrow}</Button>
+      <Link to={`/detail/${id}`}>
+      <Button className="btn btn-warning">Find out more {arrow}</Button>
+      </Link>
+      
     </Card.Footer>
   </Card>
         </div>

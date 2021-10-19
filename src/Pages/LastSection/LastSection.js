@@ -1,11 +1,10 @@
 import React from 'react';
-import { Button, Card } from 'react-bootstrap';
-
+import { Card } from 'react-bootstrap';
 
 const LastSection = ({detail}) => {
     const {name, descrip, img} = detail;
     return (
-        <div className="mt-5 pb-5">
+        <div className="mt-5 pb-5 ">
              <Card className="card_body">
     <Card.Img variant="top" src={img} />
     <Card.Body>
@@ -15,7 +14,6 @@ const LastSection = ({detail}) => {
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-      {/* <Button>Find out more {arrow}</Button> */}
     </Card.Footer>
   </Card>
         </div>

@@ -13,6 +13,7 @@ const useFirebase = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
+    const [name, setName] = useState('');
     const [isLoading, setLoading] = useState(false);
 
     const signInUsingGoogle = () => {
@@ -45,66 +46,59 @@ const useFirebase = () => {
         .finally(() =>setLoading(false))
     }
 
-    //handle register
+   //handle register
+   const handleEmailChange = e => {
+    setEmail(e.target.value);
+   }
+   //handle pass
+   const handlePassword = e => {
+     if(e.target.value.length < 6){
+        console.log('Your password at least 6 characters');
+     }
+     else{
+        setPassword(e.target.value);
+     }
+   }
 
-    const handleRegister = e => {
-        e.preventDefault();
-        createNewUser()
-        
-    }
-
-    //login
-    const handleLogin = () => {
-        signInWithEmailAndPassword(auth, email, password)
-        .then(result => {
-            const user = result.user;
-            setUser(user)
-        })
-        .catch(error => {
-            setError(error.message)
-        })
-    }
-
-
-    //handle email
-    const handleEmail = e => {
-        setEmail(e.target.value);
-    }
-
-    //handle Password
-    const handlePassWord = e => {
-        if(e.target.value.length < 6){
-            setError('Your password at least 6 characters ')
-            return;
-        }
-        else{
-            setPassword(e.target.value);
-        }
-    }
-
-    //email register
-    const createNewUser = ( email, password) => {
-        createUserWithEmailAndPassword(auth, email, password)
-        .then(result => {
-            const user = result.user;
-            setUser(user);
-            setError('')
-        })
-        .catch(error => {
-            setError(error.message)
-        })
-    }
+   const handleRegister = (e) => {
+       e.preventDefault();
+       createUserWithEmailAndPassword(auth, email, password)
+       .then(result => {
+           
+           setUser(result.user)
+       })
+       .catch((error) => {
+        setError(error.message);
+       })
+   }
     
+   const handleLogin = () => {
+       signInWithEmailAndPassword(auth, email, password)
+       .then(result => {
+           setUser(result.user);
+       } )
+       .catch((error) => {
+        setError(error.message);
+       })
+   }
+
+   const handleNameChange = e => {
+       setName(e.target.value)
+   }
+
+
     return{
         user,
         error,
         signInUsingGoogle,
         logOut,
+        isLoading,
+        handleEmailChange,
+        handlePassword,
         handleRegister,
-        handleEmail,
-        handlePassWord,
         handleLogin,
-        isLoading
+        handleNameChange,
+        name
     }
 }
 

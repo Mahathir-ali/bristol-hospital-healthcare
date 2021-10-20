@@ -1,9 +1,13 @@
 .card_body {
-  height: 500px;
+  height: 550px;
   border-bottom: 3px solid purple;
 }
 
 .card_body:hover {
   box-shadow: 5px 10px 8px 10px #888;
   border: 1px solid #000;
+}
+.btn {
+  background-color: rgb(8, 24, 57);
+  color: #fff;
 }

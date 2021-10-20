@@ -8,10 +8,10 @@ import banner3 from '../../../images/happy-life.jpg'
 const Banner = () => {
     return (
         <div className="banner">
-            <Carousel fade >
+            <Carousel fade className="slider" >
   <Carousel.Item>
     <img
-      className="d-block w-100"
+      className="d-block w-100 h-50" 
       src={banner1}
       alt="First slide"
     />

@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;500&display=swap");
+
+body {
+  font-family: "Noto Sans Mono", monospace;
+  /* background: linear-gradient(#c5d5cd, #e3e0cf); */
+}
+
 .App {
   text-align: center;
 }

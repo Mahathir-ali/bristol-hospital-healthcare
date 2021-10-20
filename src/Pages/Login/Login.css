@@ -1,3 +1,11 @@
 .fa-google {
-  color: red;
+  color: #fff;
+}
+.fa-google:hover {
+  color: rgb(8, 24, 57);
+}
+.btn:hover {
+  background-color: #fff;
+  border: 3px solid rgb(8, 24, 57);
+  color: rgb(8, 24, 57);
 }

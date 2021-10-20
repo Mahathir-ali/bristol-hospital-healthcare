@@ -1,8 +1,21 @@
 .footer {
-  background-color: rgb(94, 107, 143);
+  background-color: rgb(8, 24, 57);
   color: #fff;
 }
 .footer_links {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+.footer_links a {
+  color: #fff;
+}
+@media only screen and (max-width: 688px) {
+  .footer_links {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+  .footer_links {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
